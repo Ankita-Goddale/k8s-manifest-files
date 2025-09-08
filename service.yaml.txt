@@ -1,0 +1,15 @@
+service.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: ankita-service
+  namespace: ankita
+spec:
+  selector:
+    app: ankita
+  ports:
+   -  protocol: TCP
+      port: 80
+      targetPort:
+  type: ClusterIP

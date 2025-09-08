@@ -1,0 +1,19 @@
+Pod.yaml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ankita-pod
+  namespace: Ankita
+  labels:
+    app: ankita
+spec:
+  containers:
+   -  name: ankita-container
+      image:
+      ports:
+       -  containerPort:
+
+
+
+    

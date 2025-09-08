@@ -1,0 +1,22 @@
+deployment.yaml
+
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: ankita-dp
+  namespace: Ankita
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: Ankita
+  template:
+    metadata:
+      labels:
+        app: Ankita
+    spec:
+      containers:
+       -  name: ankita-container
+          image: ankita1809/ankita:v1
+          ports:
+           - containerPort: 80

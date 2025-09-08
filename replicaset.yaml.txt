@@ -1,0 +1,22 @@
+replicaset.yaml
+
+apiVersion: v1
+kind: ReplicaSet
+metadata:
+  name: ankita-rs
+  namespace: ankita
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ankita
+  template:
+    metadata:
+      labels:
+        app: Ankita
+    spec:
+      containers:
+       -  name: ankita-container
+          image: ankita1809/ankita:v1
+          ports:
+           -  containerPort: 80

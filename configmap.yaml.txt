@@ -1,0 +1,9 @@
+configmap.yaml
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ankita-configmap
+data:
+  DB_HOST: "mydatabase"
+  DB_PORT: "27071"
