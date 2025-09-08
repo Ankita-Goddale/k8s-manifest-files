@@ -1,0 +1,12 @@
+sc.yaml
+
+apiVersion:
+kind: storageClass
+metadata:
+  name: ankita-sc
+  namespace: ankita
+provisioner: ebs.csi.aws.com
+volumeBindingMode: 
+reclaimPolicy: Delete
+parameters:
+  type: gp2
